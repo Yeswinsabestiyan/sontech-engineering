@@ -97,3 +97,11 @@ footer .logo{margin-bottom:10px}footer p{margin:4px 0}
 .btn:focus-visible,a:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
 @media(max-width:900px){.grid.four{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid.four,.steps{grid-template-columns:1fr}.fab{display:block}}
+/* Video Gallery */
+.vid-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.vid-wrap{position:relative;border-radius:4px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9}
+.vid-wrap video{width:100%;height:100%;object-fit:cover;display:block}
+.vid-wrap:hover .vid-overlay{opacity:0}
+.vid-overlay{position:absolute;inset:0;pointer-events:none;transition:.3s}
+@media(max-width:900px){.vid-gal{grid-template-columns:1fr}}
+
